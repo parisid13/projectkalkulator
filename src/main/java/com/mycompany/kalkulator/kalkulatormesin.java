@@ -43,9 +43,16 @@ public class kalkulatormesin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
         satu.setText("Angka Pertama");
+
+        angkapertama.setText("12");
+        angkapertama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                angkapertamaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -130,6 +137,8 @@ public class kalkulatormesin extends javax.swing.JFrame {
 
         keluar.setText("Keluar");
 
+        jLabel1.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("KALKULATOR");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -207,6 +216,10 @@ public class kalkulatormesin extends javax.swing.JFrame {
     private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
         hasiltambah.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_hapusActionPerformed
+
+    private void angkapertamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkapertamaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_angkapertamaActionPerformed
 
     /**
      * @param args the command line arguments
